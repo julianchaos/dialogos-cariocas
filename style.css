@@ -1,0 +1,245 @@
+/*
+Theme Name: Diálogos Cariocas
+Theme URI: http://www.ndrade.com.br/
+Author: Julian Andrade
+Author URI: http://www.ndrade.com.br/
+Description: Tema para adaptação do site www.dialogoscariocas.org.br para WP
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: dialogos.cariocas
+*/
+
+html {
+	margin:0;
+	padding:0;
+	border:0;
+}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+	color:#666;
+}
+ @font-face {
+ font-family: 'HelveticaLight';
+ src: url('css/helveticalight-webfont.eot');
+ src: url('cs//helveticalight-webfont.eot?#iefix') format('embedded-opentype'),  url('css/helveticalight-webfont.woff') format('woff'),  url('css/helveticalight-webfont.ttf') format('truetype'),  url('css/helveticalight-webfont.svg#HelveticaLight') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+a:link, a:visited {
+	color:#67c6dd;
+	font-weight:bold;
+	text-decoration:none;
+	-webkit-transition: color 0.1s linear;
+	-moz-transition: color 0.1s linear;
+	-o-transition: color 0.1s linear;
+	transition: color 0.1s linear;
+}
+a:focus, a:hover {
+	color:#469aae;
+	
+	
+}
+h1, h2, h3 {
+	font-family: 'HelveticaLight', Arial, sans-serif;
+	color:#857f81
+}
+h1 {
+	font-size:28px;
+	text-transform:uppercase;
+	margin:20px 0px 5px 0px;
+}
+h2 {
+	font-size:21px;
+	text-transform:uppercase;
+	margin:0px 0px 10px 0px;
+}
+h3 {
+	font-size:22px;
+	text-transform:lowercase;
+	margin:20px 0px 10px 0px;
+}
+
+
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited {
+	color:#857f81;
+	text-decoration:none;
+	font-weight:normal;
+}
+h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover {
+	
+	text-decoration:underline;}
+
+img a { border:0px;}
+
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	background:#c6c2ba;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.global {
+	position:absolute;
+	width:970px;
+	left:50%;
+	top:0;
+	margin: 0px 0px 0px -485px;
+	min-height:100%;
+	background:#fff;
+}
+.topo {
+	background:#fff;
+	border-top:4px solid #4f494b;
+}
+.logo {
+	float:left;
+	margin-left:20px;
+}
+.slogan {
+	float:right;
+	margin-top:99px;
+}
+#menuPrincipal {
+	background:#4f494b;
+	clear:both;
+	border-top:7px solid #4f494b;
+}
+
+.page-id-60 .submenu .menu-primary-container,
+.page-id-238 .submenu .menu-primary-container,
+.page-id-287 .submenu .menu-primary-container {
+	display: none;
+}
+
+/* ABAS START */
+ul.menuPrincipalAbas{
+	top:0px;
+	padding:0px 0px 0px 20px;
+	margin:0px;
+	z-index:100;
+	height: 24px;
+}
+
+.menuPrincipalAbas li {
+	list-style:none;
+	float:left;
+	display:block;
+	padding: 7px 10px 0px 10px;
+	margin:0px 3px 0px 6px;
+	-moz-border-radius-topleft:10px; /* rounded corners */
+	-webkit-border-radius-topleft:10px; /* rounded corners */
+	border-top-left-radius:10px; /* rounded corners */
+	-moz-border-radius-topright:10px; /* rounded corners */
+	-webkit-border-radius-topright:10px; /* rounded corners */
+	border-top-right-radius:10px; /* rounded corners */
+	color: #cecccc;
+	font-weight:bold;
+	font-size:13px;
+	text-transform:lowercase;
+	background: #4f494b; /* old browsers */
+	border-bottom:0;
+	cursor:pointer;
+	-webkit-transition: all .15s linear!important;
+	-moz-transition: all .15s linear!important;
+	-o-transition: all .15s linear!important;
+	transition: all .15s linear!important;
+	height: 17px;
+}
+.menuPrincipalAbas li ul {
+	display: none;
+}
+.menuPrincipalAbas .current_page_item,
+.menuPrincipalAbas .current_page_parent {
+	-webkit-transition: all .15s linear!important;
+	-moz-transition: all .15s linear!important;
+	-o-transition: all .15s linear!important;
+	transition: all .15s linear!important;
+	background: #fff637 !important;
+	cursor:default!important;
+}
+.menuPrincipalAbas .current_page_parent ul {
+	display: block;
+}
+
+.menuPrincipalAbas li a:link,
+.menuPrincipalAbas li a:visited {
+	color: #cecccc !important;
+}
+.menuPrincipalAbas li a:focus,
+.menuPrincipalAbas li a:hover,
+.menuPrincipalAbas li a:active{
+	color: #fff !important;
+}
+.menuPrincipalAbas li.current_page_item a,
+.menuPrincipalAbas li.current_page_parent a{
+	color: #4f494b !important;
+}
+.submenu {
+	background:#fcf50f;
+	height:22px;
+	clear: both;
+}
+.submenu ul{
+	margin-left:35px;
+}
+.submenu li{
+	list-style:none;
+	float:left;
+	display:block;
+	margin:5px 5px 0px 0px;	
+}
+.submenu li+li:before {
+	content: "|";
+	margin-right: 5px;
+}
+.submenu li.current_page_item a {
+	color:#a7a202;
+}
+.submenu a:link,.submenu a:visited  {
+	color:#4f494b;
+	}
+.submenu a:focus,.submenu a:hover,.submenu a:active  {
+	color:#a7a202;
+	}
+.menuPrincipalTabContent {
+	clear:both;
+	background:#fff;
+	z-index:10;
+}
+.conteudoTotal {
+	margin:24px 0px 24px 36px;
+	float:left;
+	width:900px;
+}.conteudoEsq {
+	margin:24px 0px 24px 16px;
+	float:left;
+	width:590px;
+	border-right:1px solid #b4b4b4;;
+}
+.conteudoDir {
+	margin:24px 8px 24px 0px;
+	float:right;
+	width:343px;
+}
+.conteudoTotal p, .conteudoEsq p, .conteudoDir p {
+	padding: 0px 20px 0px 0px; line-height:23px;
+}
+.clear {
+	clear:both;
+	margin:0px;
+	padding:0px;
+}
+	
+/* ABAS END */
