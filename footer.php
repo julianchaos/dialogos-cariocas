@@ -7,5 +7,9 @@
 ?>
 		</div>
 		<!-- #global -->
+		<p id="footer">
+			Instituto Diálogos Cariocas - <?php echo date("Y") ?>
+		</p>
 	</body>
+	<?php wp_footer(); ?> 
 </html>

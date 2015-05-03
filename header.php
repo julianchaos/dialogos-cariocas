@@ -14,8 +14,6 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 		<?php wp_head(); ?>
-		
-		<!--<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" type="text/css" />-->
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -28,16 +26,7 @@
 				</div>
 				<div class="slogan"><img src="<?php bloginfo('template_directory'); ?>/images/slogan.gif" width="386" height="38" /></div>
 				<!-- #cabeçalho -->
-				
-				<div id="menuPrincipal">
-					<?php //wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menuPrincipalAbas', 'depth'=>1)); ?>
-				
-				</div>
-				<div class="submenu">
-<?php wp_nav_menu(array('menu_id'=>3)) ?>
-					<?php require_once 'submenu.pageid.php' ?>
-					<?php if($post->post_parent > 0){ wp_page_menu(array('include' => $submenuPageID, 'show_home'=> false));} ?>
-				</div>
-				<!-- #menu -->
+
+				<?php get_template_part('header', 'menu') ?>
 			</div>
 			<!-- #topo -->
